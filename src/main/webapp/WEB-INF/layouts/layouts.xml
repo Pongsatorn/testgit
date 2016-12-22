@@ -16,4 +16,9 @@
     <put-attribute name="footer" value="/WEB-INF/views/footer.jspx" />
   </definition>
 
+  <definition name="testgit" template="/WEB-INF/layouts/testgit.jspx">
+    <put-attribute name="header" value="/WEB-INF/views/testgit/header.jspx"/>
+    <put-attribute name="footer" value="/WEB-INF/views/testgit/footer.jspx"/>
+  </definition>
+
 </tiles-definitions>
