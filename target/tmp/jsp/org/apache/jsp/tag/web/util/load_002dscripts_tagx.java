@@ -23,7 +23,6 @@ static {
 
   private JspContext jspContext;
   private java.io.Writer _jspx_sout;
-  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_spring_theme_var_code_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_out_value_default_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_spring_url_var_value_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_set_var;
@@ -47,14 +46,12 @@ static {
   }
 
   private void _jspInit(ServletConfig config) {
-    _jspx_tagPool_spring_theme_var_code_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(config);
     _jspx_tagPool_c_out_value_default_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(config);
     _jspx_tagPool_spring_url_var_value_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(config);
     _jspx_tagPool_c_set_var = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(config);
   }
 
   public void _jspDestroy() {
-    _jspx_tagPool_spring_theme_var_code_nobody.release();
     _jspx_tagPool_c_out_value_default_nobody.release();
     _jspx_tagPool_spring_url_var_value_nobody.release();
     _jspx_tagPool_c_set_var.release();
@@ -71,8 +68,6 @@ static {
     _jspInit(config);
 
     try {
-      if (_jspx_meth_spring_theme_0(_jspx_page_context))
-        return;
       if (_jspx_meth_spring_url_0(_jspx_page_context))
         return;
       if (_jspx_meth_spring_url_1(_jspx_page_context))
@@ -85,8 +80,16 @@ static {
         return;
       if (_jspx_meth_spring_url_5(_jspx_page_context))
         return;
+      if (_jspx_meth_spring_url_6(_jspx_page_context))
+        return;
+      if (_jspx_meth_spring_url_7(_jspx_page_context))
+        return;
+      out.write("<script type=\"text/javascript\" src=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${js}", java.lang.String.class, (PageContext)this.getJspContext(), null) + "\">");
+      out.write("</script>");
+      out.write("<script type=\"text/javascript\" src=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${bootstrapJs}", java.lang.String.class, (PageContext)this.getJspContext(), null) + "\">");
+      out.write("</script>");
+      out.write("<link href=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${bootstrap}", java.lang.String.class, (PageContext)this.getJspContext(), null) + "\" type=\"text/css\" rel=\"stylesheet\" />");
       out.write("<link href=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${tundra_url}", java.lang.String.class, (PageContext)this.getJspContext(), null) + "\" type=\"text/css\" rel=\"stylesheet\" />");
-      out.write("<link href=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${roo_css_url}", java.lang.String.class, (PageContext)this.getJspContext(), null) + "\" media=\"screen\" type=\"text/css\" rel=\"stylesheet\" />");
       out.write("<link href=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${favicon}", java.lang.String.class, (PageContext)this.getJspContext(), null) + "\" rel=\"SHORTCUT ICON\" />");
       if (_jspx_meth_c_set_0(_jspx_page_context))
         return;
@@ -120,32 +123,6 @@ static {
     }
   }
 
-  private boolean _jspx_meth_spring_theme_0(PageContext _jspx_page_context)
-          throws Throwable {
-    JspWriter out = _jspx_page_context.getOut();
-    //  spring:theme
-    org.springframework.web.servlet.tags.ThemeTag _jspx_th_spring_theme_0 = (org.springframework.web.servlet.tags.ThemeTag) _jspx_tagPool_spring_theme_var_code_nobody.get(org.springframework.web.servlet.tags.ThemeTag.class);
-    _jspx_th_spring_theme_0.setPageContext(_jspx_page_context);
-    _jspx_th_spring_theme_0.setParent(null);
-    _jspx_th_spring_theme_0.setVar("roo_css");
-    _jspx_th_spring_theme_0.setCode("styleSheet");
-    int[] _jspx_push_body_count_spring_theme_0 = new int[] { 0 };
-    try {
-      int _jspx_eval_spring_theme_0 = _jspx_th_spring_theme_0.doStartTag();
-      if (_jspx_th_spring_theme_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-        throw new SkipPageException();
-      }
-    } catch (Throwable _jspx_exception) {
-      while (_jspx_push_body_count_spring_theme_0[0]-- > 0)
-        out = _jspx_page_context.popBody();
-      _jspx_th_spring_theme_0.doCatch(_jspx_exception);
-    } finally {
-      _jspx_th_spring_theme_0.doFinally();
-      _jspx_tagPool_spring_theme_var_code_nobody.reuse(_jspx_th_spring_theme_0);
-    }
-    return false;
-  }
-
   private boolean _jspx_meth_spring_url_0(PageContext _jspx_page_context)
           throws Throwable {
     JspWriter out = _jspx_page_context.getOut();
@@ -153,8 +130,8 @@ static {
     org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_url_0 = (org.springframework.web.servlet.tags.UrlTag) _jspx_tagPool_spring_url_var_value_nobody.get(org.springframework.web.servlet.tags.UrlTag.class);
     _jspx_th_spring_url_0.setPageContext(_jspx_page_context);
     _jspx_th_spring_url_0.setParent(null);
-    _jspx_th_spring_url_0.setVar("roo_css_url");
-    _jspx_th_spring_url_0.setValue((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("/${roo_css}", java.lang.String.class, (PageContext)this.getJspContext(), null));
+    _jspx_th_spring_url_0.setVar("dojo_url");
+    _jspx_th_spring_url_0.setValue("/resources/dojo/dojo.js");
     int[] _jspx_push_body_count_spring_url_0 = new int[] { 0 };
     try {
       int _jspx_eval_spring_url_0 = _jspx_th_spring_url_0.doStartTag();
@@ -179,8 +156,8 @@ static {
     org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_url_1 = (org.springframework.web.servlet.tags.UrlTag) _jspx_tagPool_spring_url_var_value_nobody.get(org.springframework.web.servlet.tags.UrlTag.class);
     _jspx_th_spring_url_1.setPageContext(_jspx_page_context);
     _jspx_th_spring_url_1.setParent(null);
-    _jspx_th_spring_url_1.setVar("dojo_url");
-    _jspx_th_spring_url_1.setValue("/resources/dojo/dojo.js");
+    _jspx_th_spring_url_1.setVar("tundra_url");
+    _jspx_th_spring_url_1.setValue("/resources/dijit/themes/tundra/tundra.css");
     int[] _jspx_push_body_count_spring_url_1 = new int[] { 0 };
     try {
       int _jspx_eval_spring_url_1 = _jspx_th_spring_url_1.doStartTag();
@@ -205,8 +182,8 @@ static {
     org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_url_2 = (org.springframework.web.servlet.tags.UrlTag) _jspx_tagPool_spring_url_var_value_nobody.get(org.springframework.web.servlet.tags.UrlTag.class);
     _jspx_th_spring_url_2.setPageContext(_jspx_page_context);
     _jspx_th_spring_url_2.setParent(null);
-    _jspx_th_spring_url_2.setVar("tundra_url");
-    _jspx_th_spring_url_2.setValue("/resources/dijit/themes/tundra/tundra.css");
+    _jspx_th_spring_url_2.setVar("spring_url");
+    _jspx_th_spring_url_2.setValue("/resources/spring/Spring.js");
     int[] _jspx_push_body_count_spring_url_2 = new int[] { 0 };
     try {
       int _jspx_eval_spring_url_2 = _jspx_th_spring_url_2.doStartTag();
@@ -231,8 +208,8 @@ static {
     org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_url_3 = (org.springframework.web.servlet.tags.UrlTag) _jspx_tagPool_spring_url_var_value_nobody.get(org.springframework.web.servlet.tags.UrlTag.class);
     _jspx_th_spring_url_3.setPageContext(_jspx_page_context);
     _jspx_th_spring_url_3.setParent(null);
-    _jspx_th_spring_url_3.setVar("spring_url");
-    _jspx_th_spring_url_3.setValue("/resources/spring/Spring.js");
+    _jspx_th_spring_url_3.setVar("spring_dojo_url");
+    _jspx_th_spring_url_3.setValue("/resources/spring/Spring-Dojo.js");
     int[] _jspx_push_body_count_spring_url_3 = new int[] { 0 };
     try {
       int _jspx_eval_spring_url_3 = _jspx_th_spring_url_3.doStartTag();
@@ -257,8 +234,8 @@ static {
     org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_url_4 = (org.springframework.web.servlet.tags.UrlTag) _jspx_tagPool_spring_url_var_value_nobody.get(org.springframework.web.servlet.tags.UrlTag.class);
     _jspx_th_spring_url_4.setPageContext(_jspx_page_context);
     _jspx_th_spring_url_4.setParent(null);
-    _jspx_th_spring_url_4.setVar("spring_dojo_url");
-    _jspx_th_spring_url_4.setValue("/resources/spring/Spring-Dojo.js");
+    _jspx_th_spring_url_4.setVar("favicon");
+    _jspx_th_spring_url_4.setValue("/resources/images/favicon.ico");
     int[] _jspx_push_body_count_spring_url_4 = new int[] { 0 };
     try {
       int _jspx_eval_spring_url_4 = _jspx_th_spring_url_4.doStartTag();
@@ -283,8 +260,8 @@ static {
     org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_url_5 = (org.springframework.web.servlet.tags.UrlTag) _jspx_tagPool_spring_url_var_value_nobody.get(org.springframework.web.servlet.tags.UrlTag.class);
     _jspx_th_spring_url_5.setPageContext(_jspx_page_context);
     _jspx_th_spring_url_5.setParent(null);
-    _jspx_th_spring_url_5.setVar("favicon");
-    _jspx_th_spring_url_5.setValue("/resources/images/favicon.ico");
+    _jspx_th_spring_url_5.setVar("bootstrap");
+    _jspx_th_spring_url_5.setValue("/resources/styles/bootstrap/css/bootstrap.min.css");
     int[] _jspx_push_body_count_spring_url_5 = new int[] { 0 };
     try {
       int _jspx_eval_spring_url_5 = _jspx_th_spring_url_5.doStartTag();
@@ -298,6 +275,58 @@ static {
     } finally {
       _jspx_th_spring_url_5.doFinally();
       _jspx_tagPool_spring_url_var_value_nobody.reuse(_jspx_th_spring_url_5);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_spring_url_6(PageContext _jspx_page_context)
+          throws Throwable {
+    JspWriter out = _jspx_page_context.getOut();
+    //  spring:url
+    org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_url_6 = (org.springframework.web.servlet.tags.UrlTag) _jspx_tagPool_spring_url_var_value_nobody.get(org.springframework.web.servlet.tags.UrlTag.class);
+    _jspx_th_spring_url_6.setPageContext(_jspx_page_context);
+    _jspx_th_spring_url_6.setParent(null);
+    _jspx_th_spring_url_6.setVar("bootstrapJs");
+    _jspx_th_spring_url_6.setValue("/resources/styles/bootstrap/js/bootstrap.min.js");
+    int[] _jspx_push_body_count_spring_url_6 = new int[] { 0 };
+    try {
+      int _jspx_eval_spring_url_6 = _jspx_th_spring_url_6.doStartTag();
+      if (_jspx_th_spring_url_6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        throw new SkipPageException();
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_spring_url_6[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_spring_url_6.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_spring_url_6.doFinally();
+      _jspx_tagPool_spring_url_var_value_nobody.reuse(_jspx_th_spring_url_6);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_spring_url_7(PageContext _jspx_page_context)
+          throws Throwable {
+    JspWriter out = _jspx_page_context.getOut();
+    //  spring:url
+    org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_url_7 = (org.springframework.web.servlet.tags.UrlTag) _jspx_tagPool_spring_url_var_value_nobody.get(org.springframework.web.servlet.tags.UrlTag.class);
+    _jspx_th_spring_url_7.setPageContext(_jspx_page_context);
+    _jspx_th_spring_url_7.setParent(null);
+    _jspx_th_spring_url_7.setVar("js");
+    _jspx_th_spring_url_7.setValue("/resources/styles/bootstrap/js/jquery-1.11.3.min.js");
+    int[] _jspx_push_body_count_spring_url_7 = new int[] { 0 };
+    try {
+      int _jspx_eval_spring_url_7 = _jspx_th_spring_url_7.doStartTag();
+      if (_jspx_th_spring_url_7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        throw new SkipPageException();
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_spring_url_7[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_spring_url_7.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_spring_url_7.doFinally();
+      _jspx_tagPool_spring_url_var_value_nobody.reuse(_jspx_th_spring_url_7);
     }
     return false;
   }
