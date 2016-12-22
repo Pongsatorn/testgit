@@ -1,10 +1,17 @@
 ----------------------------------------------------------------
-Thu Dec 22 09:30:51 ICT 2016:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-0159-245d-e7ba-00000dad5e40 
-on database directory C:\Users\Macbook-Macbook\softplus\testgit\workshop  with class loader WebAppClassLoader=workshop@6e355249 
-Loaded from file:/C:/Users/Macbook-Macbook/.m2/repository/org/apache/derby/derby/10.8.2.2/derby-10.8.2.2.jar
+Thu Dec 22 11:25:40 ICT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-0159-24c7-0584-00000ee56558 
+on database directory /home/nbkf/MyProject/TestGit/testgit/workshop  with class loader WebappClassLoader
+  context: /workshop
+  delegate: false
+  repositories:
+    /WEB-INF/classes/
+----------> Parent Classloader:
+ClassRealm[plugin>org.codehaus.mojo:tomcat-maven-plugin:1.1, parent: sun.misc.Launcher$AppClassLoader@234f79cb]
+ 
+Loaded from file:/home/nbkf/.m2/repository/org/apache/derby/derby/10.8.2.2/derby-10.8.2.2.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_101-b13
-user.dir=C:\Users\Macbook-Macbook\softplus\testgit
+java.runtime.version=1.7.0_79-b15
+user.dir=/home/nbkf/MyProject/TestGit/testgit
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''

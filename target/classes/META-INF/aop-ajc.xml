@@ -1,18 +1,18 @@
 <aspectj>
 <aspects>
-<aspect name="com.spt.workshop.domain.Address_Roo_ToString"/>
-<aspect name="com.spt.workshop.domain.Address_Roo_Jpa_Entity"/>
-<aspect name="com.spt.workshop.web.AddressController_Roo_Controller"/>
-<aspect name="com.spt.workshop.domain.Student_Roo_JavaBean"/>
-<aspect name="com.spt.workshop.domain.Student_Roo_ToString"/>
-<aspect name="com.spt.workshop.domain.Student_Roo_Configurable"/>
-<aspect name="com.spt.workshop.web.StudentController_Roo_Controller"/>
-<aspect name="com.spt.workshop.domain.Address_Roo_JavaBean"/>
 <aspect name="com.spt.workshop.domain.Address_Roo_Jpa_ActiveRecord"/>
-<aspect name="com.spt.workshop.domain.Student_Roo_Jpa_Entity"/>
+<aspect name="com.spt.workshop.domain.Address_Roo_Jpa_Entity"/>
+<aspect name="com.spt.workshop.domain.Student_Roo_Configurable"/>
 <aspect name="com.spt.workshop.domain.Student_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.spt.workshop.domain.Address_Roo_JavaBean"/>
 <aspect name="com.spt.workshop.domain.Address_Roo_Configurable"/>
+<aspect name="com.spt.workshop.domain.Address_Roo_ToString"/>
+<aspect name="com.spt.workshop.domain.Student_Roo_JavaBean"/>
+<aspect name="com.spt.workshop.domain.Student_Roo_Jpa_Entity"/>
+<aspect name="com.spt.workshop.web.StudentController_Roo_Controller"/>
+<aspect name="com.spt.workshop.web.AddressController_Roo_Controller"/>
 <aspect name="com.spt.workshop.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="com.spt.workshop.domain.Student_Roo_ToString"/>
 </aspects>
 </aspectj>
 
