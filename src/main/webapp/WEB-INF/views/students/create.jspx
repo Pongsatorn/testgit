@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_spt_workshop_domain_Student" modelAttribute="student" path="/students" render="${empty dependencies}" z="3kb/3/3JvgqcGWkY4hoWrq++5wI=">
+        <field:input field="firstname" id="c_com_spt_workshop_domain_Student_firstname" z="gr4jNzRFSgYF2Wj3Fyz4Yh5BvZU="/>
+        <field:input field="lastname" id="c_com_spt_workshop_domain_Student_lastname" z="8LgPIONTq421Hc+ES4LbykicYFo="/>
+        <field:input field="age" id="c_com_spt_workshop_domain_Student_age" validationMessageCode="field_invalid_integer" z="zR9TowW72tZcad/NFoLeGS+fCmE="/>
+        <field:simple field="addresses" id="c_com_spt_workshop_domain_Student_addresses" messageCode="entity_reference_not_managed" messageCodeAttribute="Address" z="sEDPmyv10501aIUAv5sPWxpIpJM="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_spt_workshop_domain_Student" render="${not empty dependencies}" z="eCAc1WbzDR0oLJ1Zm0uhBt5N9zw="/>
+</div>
