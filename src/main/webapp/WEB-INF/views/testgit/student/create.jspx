@@ -6,22 +6,51 @@
     <div class="container">
 
         <div class="col-lg-6">
-            <div class="form-group">
-                <div class="form-horizontal col-lg-2">
-                    <label>Email</label><br/><br/>
-                    <label>Password</label>
+            <form method="POST">
 
-                </div>
-
-                <div class="form-horizontal col-lg-10">
-                    <input type="text" class="form-control"/><br/>
-                    <input type="password" class="form-control"/>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="add-on1">First Name</span>
+                        <input type="text" name="firstname" id="firstname" class="form-control" aria-describedby="add-on1"/>
+                    </div>
                     <br/>
-                    <input type="button" class="btn btn-sm btn-default" value="Sign In"/>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="add-on2">Last Name</span>
+                        <input type="text" name="lastname" id="lastname" class="form-control" aria-describedby="add-on2"/>
+                    </div>
+                    <br/>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="add-on3">Age</span>
+                        <input type="number" name="age" id="age" class="form-control" aria-describedby="add-on3"/>
+                    </div>
+                    <br/>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="add-on3">Village</span>
+                        <input type="text" name="village" id="village" class="form-control" aria-describedby="add-on3"/>
+                    </div>
+                    <br/>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="add-on3">House No.</span>
+                        <input type="text" name="houseNo" id="houseNo" class="form-control" aria-describedby="add-on3"/>
+                    </div>
+                    <br/>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="add-on3">Road</span>
+                        <input type="text" name="road" id="road" class="form-control" aria-describedby="add-on3"/>
+                    </div>
+                    <br/>
+                    <div class="col-lg6">
+                        <div class="btn-group">
+                            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                        <div class="btn-group">
+                            <button type="reset" id="reset" class="btn btn-danger">Reset</button>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
+            </form>
         </div>
+
 
     </div>
 
