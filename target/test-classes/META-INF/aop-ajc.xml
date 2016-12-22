@@ -1,13 +1,13 @@
 <aspectj>
 <aspects>
-<aspect name="com.spt.workshop.domain.AddressDataOnDemand_Roo_DataOnDemand"/>
-<aspect name="com.spt.workshop.domain.AddressIntegrationTest_Roo_Configurable"/>
-<aspect name="com.spt.workshop.domain.StudentIntegrationTest_Roo_Configurable"/>
-<aspect name="com.spt.workshop.domain.StudentIntegrationTest_Roo_IntegrationTest"/>
 <aspect name="com.spt.workshop.domain.AddressDataOnDemand_Roo_Configurable"/>
+<aspect name="com.spt.workshop.domain.StudentIntegrationTest_Roo_Configurable"/>
+<aspect name="com.spt.workshop.domain.AddressIntegrationTest_Roo_Configurable"/>
+<aspect name="com.spt.workshop.domain.AddressDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.spt.workshop.domain.StudentDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.spt.workshop.domain.StudentIntegrationTest_Roo_IntegrationTest"/>
 <aspect name="com.spt.workshop.domain.AddressIntegrationTest_Roo_IntegrationTest"/>
 <aspect name="com.spt.workshop.domain.StudentDataOnDemand_Roo_Configurable"/>
-<aspect name="com.spt.workshop.domain.StudentDataOnDemand_Roo_DataOnDemand"/>
 </aspects>
 </aspectj>
 

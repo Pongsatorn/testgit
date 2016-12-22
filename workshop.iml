@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<module version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="false">
-    <orderEntry type="sourceFolder" forTests="false" />
-=======
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="AspectJ" name="AspectJ">
@@ -111,6 +106,5 @@
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-core:2.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-template:2.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-api:2.2.2" level="project" />
->>>>>>> dev
   </component>
 </module>
