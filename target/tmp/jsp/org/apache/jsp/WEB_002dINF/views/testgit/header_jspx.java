@@ -65,13 +65,13 @@ public final class header_jspx extends org.apache.jasper.runtime.HttpJspBase
       out.write("<span class=\"caret\" />");
       out.write("</a>");
       out.write("<ul class=\"dropdown-menu\">");
-      out.write("<li>");
-      out.write("<a href=\"#\">");
+      out.write("<li id=\"addStudentPage\">");
+      out.write("<a>");
       out.write("Add new Student");
       out.write("</a>");
       out.write("</li>");
-      out.write("<li>");
-      out.write("<a href=\"#\">");
+      out.write("<li id=\"viewStudentPage\">");
+      out.write("<a>");
       out.write("View Students");
       out.write("</a>");
       out.write("</li>");
@@ -143,6 +143,20 @@ public final class header_jspx extends org.apache.jasper.runtime.HttpJspBase
       out.write("</div>");
       out.write("</div>");
       out.write("</nav>");
+      out.write("<script type=\"text/javascript\">");
+      out.write("var session = {\n");
+      out.write("            context: '");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("'\n");
+      out.write("        }");
+      out.write("</script>");
+      out.write("<script type=\"text/javascript\">");
+      out.write("\n");
+      out.write("        $(\"#addNewStudentPage\").click(function () {\n");
+      out.write("            window.location.href(window.location.host + \"/workshop/create\");\n");
+      out.write("        })\n");
+      out.write("    ");
+      out.write("</script>");
       out.write("</div>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

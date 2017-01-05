@@ -23,37 +23,41 @@ public class Student_Custom_Controller {
 
     @RequestMapping(value = "/create", produces = "text/html")
     public String createView( Model uiModel) {
-        logger.error("Create Form View");
+        logger.info("Create Form View");
         return "testgit/create";
     }
 
     @RequestMapping(value = "/create", produces = "text/html",method = RequestMethod.POST)
     public String createController(@Valid Student std, @Valid Address add, Model model){
-        logger.error("createController");
+        logger.info("Create Student Controller");
         try {
             Student student = new Student();
-            logger.error(std.getFirstname());
+            logger.info("First Name : " + std.getFirstname());
             student.setFirstname(std.getFirstname());
-            logger.error(std.getLastname());
+            logger.info("Last Name : " + std.getLastname());
             student.setLastname(std.getLastname());
-            logger.error(std.getAge());
+            logger.info("Age : " + std.getAge());
             student.setAge(std.getAge());
 
             Address address = new Address();
             address.setVillage(add.getVillage());
-            logger.error(add.getVillage());
+            logger.info("Village : " + add.getVillage());
             address.setHouseNo(add.getHouseNo());
-            logger.error(add.getHouseNo());
+            logger.info("House No. : " +  add.getHouseNo());
             address.setRoad(add.getRoad());
-            logger.error(add.getRoad());
+            logger.info("Road : " + add.getRoad());
 
             Set<Address> addressSet = new HashSet<Address>();
             addressSet.add(address);
 
+            address.setStudent(student);
             student.setAddresses(addressSet);
-            logger.error(student);
-            logger.error(student.getAddresses());
+            logger.info("Student : " + student);
+            logger.info("Student address : " + student.getAddresses());
+            logger.info("Address : " + address);
+            logger.info("Address student : " + address.getStudent());
 
+            address.persist();
             student.persist();
 
         }catch (Exception e){

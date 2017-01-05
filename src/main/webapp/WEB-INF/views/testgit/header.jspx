@@ -23,8 +23,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Student<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Add new Student</a></li>
-                            <li><a href="#">View Students</a></li>
+                            <li id="addStudentPage"><a>Add new Student</a></li>
+                            <li id="viewStudentPage"><a>View Students</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -57,5 +57,18 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
+
+    <script type="text/javascript">
+        <![CDATA[var session = {
+            context: '${pageContext.request.contextPath}'
+        }]]>
+
+    </script>
+
+    <script type="text/javascript">
+        $("#addNewStudentPage").click(function () {
+            window.location.href(window.location.host + "/workshop/create");
+        })
+    </script>
 
 </div>
